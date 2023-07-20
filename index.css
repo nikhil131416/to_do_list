@@ -1,0 +1,129 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header-container {
+  background: linear-gradient(to right, #f2a30c, #f2660c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 31%;
+  margin:auto;
+}
+
+.header-container h1 {
+  margin: 0;
+  color: white;
+}
+
+#todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #fafafa, #f1f1f1);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+#add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: #45a049;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todo-item .delete-button {
+  width:35px;
+  height:35px;
+  margin-left: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-item .delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.todo-item .task {
+  flex-grow: 1;
+  font-size: 18px;
+  color: #333;
+  word-wrap: break-word;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-style: italic;
+}
+
+.todo-item .task.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item .task:hover {
+  color: #555;
+}
+
+#task-count {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+}
